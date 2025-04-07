@@ -1,0 +1,135 @@
+/* General Styles */
+body {
+    background-color: #f8f9fa;
+}
+
+/* Card Styles */
+.card {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border: none;
+    margin-bottom: 20px;
+}
+
+.card-header {
+    border-bottom: none;
+}
+
+/* Post Styles */
+.post {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.post-content {
+    margin-bottom: 10px;
+}
+
+.post-actions {
+    display: flex;
+    gap: 15px;
+}
+
+/* Complaint Form Styles */
+.complaint-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Notification Styles */
+.notification {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.notification:last-child {
+    border-bottom: none;
+}
+
+/* Custom Button Styles */
+.btn-post {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.btn-post:hover {
+    background-color: #0056b3;
+    transform: translateY(-1px);
+}
+
+/* Category Badge Styles */
+.category-badge {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* Anonymous Post Indicator */
+.anonymous-post {
+    color: #6c757d;
+    font-style: italic;
+}
+
+/* File Upload Styles */
+.file-upload {
+    border: 2px dashed #dee2e6;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.file-upload:hover {
+    border-color: #007bff;
+    background-color: #f8f9fa;
+}
+
+/* Status Badge Styles */
+.status-badge {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.status-pending {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.status-in-progress {
+    background-color: #17a2b8;
+    color: #fff;
+}
+
+.status-resolved {
+    background-color: #28a745;
+    color: #fff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .card {
+        margin-bottom: 15px;
+    }
+} 
