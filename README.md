@@ -1,58 +1,58 @@
-# Freedom Wall Student Registration System
+# Freedom Wall & Complaint System
 
-A web-based registration system for students with email verification using OTP.
+A modern web-based platform designed to facilitate student expression and complaint management within educational institutions. This system provides a secure and user-friendly interface for students to register, share their thoughts, and submit complaints while maintaining anonymity and ensuring proper verification.
 
-## Setup Instructions
+## 🌟 Features
 
-### 1. Install Dependencies
+- **Secure Student Registration**
+  - Email verification system with OTP
+  - Domain-specific email validation (@csab.edu.ph)
+  - Robust student ID verification
 
-```bash
-composer install
-```
+- **User-Friendly Interface**
+  - Clean and responsive design
+  - Intuitive navigation
+  - Mobile-friendly layout
 
-### 2. Configure SMTP Settings
+- **Complaint Management**
+  - Anonymous posting capabilities
+  - Structured complaint submission
+  - Real-time status tracking
 
-Edit the `config/smtp_config.php` file with your SMTP credentials:
+- **Administrative Tools**
+  - Comprehensive dashboard for administrators
+  - User management system
+  - Content moderation capabilities
 
-```php
-// SMTP Server Configuration
-define('SMTP_HOST', 'smtp.gmail.com');
-define('SMTP_PORT', 587);
-define('SMTP_USERNAME', 'your-email@gmail.com'); // Replace with your email
-define('SMTP_PASSWORD', 'your-app-password'); // Replace with your app password
-define('SMTP_FROM_EMAIL', 'your-email@gmail.com'); // Replace with your email
-define('SMTP_FROM_NAME', 'Freedom Wall');
-```
+## 🚀 Getting Started
 
-#### For Gmail Users:
+1. Clone the repository
+2. Install dependencies using Composer
+3. Configure your database settings
+4. Set up SMTP for email verification
+5. Start your local server
 
-1. Enable 2-Step Verification in your Google Account
-2. Generate an App Password:
-   - Go to Google Account > Security > 2-Step Verification
-   - Scroll down to "App passwords"
-   - Select "Mail" and your device
-   - Use the generated 16-character password as your SMTP_PASSWORD
+For detailed setup instructions, please refer to the [Setup Guide](docs/setup.md).
 
-### 3. Database Setup
+## 🛠️ Technology Stack
 
-Ensure your database is properly configured in the `includes/functions.php` file.
+- PHP 7.4+
+- MySQL/MariaDB
+- Bootstrap 5
+- Composer for dependency management
+- PHPMailer for email functionality
 
-## Features
+## 📝 License
 
-- Student registration with email verification
-- OTP-based email verification
-- Secure password handling
-- Form validation for student ID and email formats
-- Responsive design
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Email Formats
+## 🤝 Contributing
 
-The system accepts the following email formats:
-- `studentname@csab.edu.ph`
-- `j.studentname@csab.edu.ph` (where j is any single letter)
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-## Student ID Formats
+## 📧 Contact
 
-The system accepts the following Student ID formats:
-- `00-00-0000`
-- `00-0000-0000` 
+For any queries or support, please open an issue in the GitHub repository.
+
+---
+Made with ❤️ for educational institutions 
